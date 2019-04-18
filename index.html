@@ -12,9 +12,16 @@
             <input type="submit" value="submit" class="submit">
             <p class="results">Busted</p>
         </div>
-    </body>
-    <script>
+         <script>
         console.log("We are inside the web");
         alert("Hank is approaching");
+        var compute = document.querySelector(".submit");
+        
+        function test(){
+            document.querySelector(".results").innerHTML = parseInt(document.getElementById("num1").value);
+    }
+    compute.addEventListener("click", test);
     </script>
+    </body>
+        
 </html>
