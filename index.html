@@ -20,6 +20,10 @@
             <label for="sideC">Side C</label>
             <input type="submit" value="submit" class="submit">
             <p class="results">nothing</p>
+            <p class="sum">nothing</p>
+            <p class="difference">nothing</p>
+            <p class="product">nothing</p>
+            <p class="divide">nothing</p>
         </div>
         
     <script>
@@ -27,23 +31,25 @@
     alert("Hank is approaching");
     var compute = document.querySelector(".submit");
         
-    function pythagoras(){
+    function calculator(){
         var a = parseFloat(document.querySelector(".sideA").value);
         console.log(a);
         
         var b = parseFloat(document.querySelector(".sideB").value);
         console.log(b);
         
-        var out = document.querySelector(".results");
-        var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        var sum = document.querySelector(".sum");
+        var difference = document.querySelector(".difference");
+        var product = document.querySelector(".product");
+        var divide = document.querySelector(".divide");
         
-        var d = Math.sqrt(Math.pow(a + 2) + Math.pow(b + 2));
-        console.log(d);
-        
-        out.innerHTML = parseFloat(c);
+        sum.innerHTML = a + b;
+        difference.HTML = a - b;
+        product.HTML = a * b;
+        divide.HTML = a / b;
     }
-    compute.addEventListener("click", pythagoras);
+    compute.addEventListener("click", calculator);
     </script>
     </body>
-        
+    
 </html>
