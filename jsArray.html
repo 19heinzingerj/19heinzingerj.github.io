@@ -4,6 +4,14 @@
         <title>JS Array</title>
     </head>
     <body>
+        <div>
+            <input type="radio" name="response" value="yes" checked>Yes<br>
+            <input type="radio" name="response" value="no">No<br>
+            <input type="radio" name="response" value="maybe">Maybe<br>
+            <input type="radio" name="response" value="sure why not">Sure why not<br>
+            <input type="radio" name="response" value="what no how">What no how<br>
+        </div>
+        
         <input type="submit" value="submit" class="submit">
         <p class="out">Nothing yet</p>
         
@@ -11,10 +19,6 @@
     var submit = document.querySelector(".submit");
     var out = document.querySelector(".out");
     var arr = ["yes", "no", "maybe", "sure why not", "what, no, how"];
-    
-    console.log(arr[0]);
-    console.log(arr[1]);
-    console.log(arr[2]);
     
     for(var i = 0; i < arr.length; i++){
         console.log(arr[i]);
