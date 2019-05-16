@@ -16,6 +16,18 @@
         <input type="submit" value="submit" class="submit">
         <p class="out">Nothing yet</p>
         
+        <p>Who is the lead singer for Megadeath?</p>
+        <div>
+            <input type="radio" name="response" value="Jimmy Hendrix">Jimmy Hendrix<br>
+            <input type="radio" name="response" value="James Hetfield">James Hetfield<br>
+            <input type="radio" name="response" value="Dave Mustaine">Dave Mustaine<br>
+            <input type="radio" name="response" value="Roger Daltrey">Roger Daltrey<br>
+        </div>
+        
+        <input type="submit" value="submit" class="submit">
+        <p class="out">Nothing yet</p>
+        
+        
     <script>
     var submit = document.querySelector(".submit");
     var out = document.querySelector(".out");
@@ -25,6 +37,16 @@
         for(var i = 0; i < radios.length; i++){
             if(radios[i].checked){
                 if(radios[i].value == "1982"){
+                    out.innerHTML = "Correct";
+                }
+                else{
+                    out.innerHTML = "Wrong";
+                }
+                break;
+
+         for(var i = 1; i < radios.length; i++){
+            if(radios[i].checked){
+                if(radios[i].value == "Dave Mustaine"){
                     out.innerHTML = "Correct";
                 }
                 else{
