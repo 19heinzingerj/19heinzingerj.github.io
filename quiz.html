@@ -7,10 +7,10 @@
         <img src="seek.jpg">
         <p>In what year did Metallica's "Kill 'em All" album release?</p>
         <div>
-            <input type="radio" name="response" value="1982">1982<br>
-            <input type="radio" name="response" value="1981">1981<br>
-            <input type="radio" name="response" value="1990">1990<br>
-            <input type="radio" name="response" value="1979">1979<br>
+            <input type="radio" name="question1" value="1982">1982<br>
+            <input type="radio" name="question1" value="1981">1981<br>
+            <input type="radio" name="question1" value="1990">1990<br>
+            <input type="radio" name="question1" value="1979">1979<br>
         </div>
         
         <input type="submit" value="submit" class="submit">
@@ -18,25 +18,101 @@
         
         <p>Who is the lead singer for Megadeath?</p>
         <div>
-            <input type="radio" name="response" value="Jimmy Hendrix">Jimmy Hendrix<br>
-            <input type="radio" name="response" value="James Hetfield">James Hetfield<br>
-            <input type="radio" name="response" value="Dave Mustaine">Dave Mustaine<br>
-            <input type="radio" name="response" value="Roger Daltrey">Roger Daltrey<br>
+            <input type="radio" name="question2" value="Jimmy Hendrix">Jimmy Hendrix<br>
+            <input type="radio" name="question2" value="James Hetfield">James Hetfield<br>
+            <input type="radio" name="question2" value="Dave Mustaine">Dave Mustaine<br>
+            <input type="radio" name="question2" value="Roger Daltrey">Roger Daltrey<br>
         </div>
         
-        <input type="submit" value="submit" class="submit">
-        <p class="out">Nothing yet</p>
+         <p>Who sang "Rebel Yell" and "White Wedding"?</p>
+        <div>
+            <input type="radio" name="question3" value="Billy Idol">Billy Idol<br>
+            <input type="radio" name="question3" value="Tom Petty">Tom Petty<br>
+            <input type="radio" name="question3" value="Johnny Cash">Johnny Cash<br>
+            <input type="radio" name="question3" value="Blue Oyster Cult">Blue Oyster Cult<br>
+        </div>
         
+         <p>Which band sang "Wheel in the Sky" and "Faithfully"?</p>
+        <div>
+            <input type="radio" name="question4" value="Phil Collins">Phil Collins<br>
+            <input type="radio" name="question4" value="Steve Miller Band">Steve Miller Band<br>
+            <input type="radio" name="question4" value="Poison">Poison<br>
+            <input type="radio" name="question4" value="Journey">Journey<br>
+        </div>
+        
+          <p>Which band is Mr.P's favorite?</p>
+        <div>
+            <input type="radio" name="question5" value="Iron Maiden">Iron Maiden<br>
+            <input type="radio" name="question5" value="AC/DC">AC/DC<br>
+            <input type="radio" name="question5" value="Alice in Chains">Alice in Chains<br>
+            <input type="radio" name="question5" value="Black Sabbath">Black Sabbath<br>
+        </div>
         
     <script>
     var submit = document.querySelector(".submit");
     var out = document.querySelector(".out");
 
-    function reply(){
-        var radios = document.getElementsByName("response");
+    function Question1(){
+        var radios = document.getElementsByName("question1");
         for(var i = 0; i < radios.length; i++){
             if(radios[i].checked){
                 if(radios[i].value == "1982"){
+                    out.innerHTML = "Correct";
+                }
+                else{
+                    out.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+    }
+        function Question2(){
+        var radios = document.getElementsByName("question2");
+        for(var i = 1; i < radios.length; i++){
+            if(radios[i].checked){
+                if(radios[i].value == "Dave Mustaine"){
+                    out.innerHTML = "Correct";
+                }
+                else{
+                    out.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+    }
+      function Question3(){
+        var radios = document.getElementsByName("question3");
+        for(var i = 2; i < radios.length; i++){
+            if(radios[i].checked){
+                if(radios[i].value == "Billy Idol"){
+                    out.innerHTML = "Correct";
+                }
+                else{
+                    out.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+    }
+      function Question4(){
+        var radios = document.getElementsByName("question4");
+        for(var i = 3; i < radios.length; i++){
+            if(radios[i].checked){
+                if(radios[i].value == "Journey"){
+                    out.innerHTML = "Correct";
+                }
+                else{
+                    out.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+    }
+     function Question5(){
+        var radios = document.getElementsByName("question5");
+        for(var i = 3; i < radios.length; i++){
+            if(radios[i].checked){
+                if(radios[i].value == "Alice in Chains"){
                     out.innerHTML = "Correct";
                 }
                 else{
