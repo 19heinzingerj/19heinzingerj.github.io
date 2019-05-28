@@ -14,7 +14,7 @@
         </div>
 
         <input type="submit" value="submit" class="submit">
-        <p class="out">Nothing yet</p>
+        <p class="out1">Nothing yet</p>
 
         <p>Who is the lead singer for Megadeath?</p>
         <div>
@@ -25,7 +25,7 @@
         </div>
         
         <input type="submit" value="submit" class="submit">
-        <p class="out">Nothing yet</p>
+        <p class="out2">Nothing yet</p>
 
          <p>Who sang "Rebel Yell" and "White Wedding"?</p>
         <div>
@@ -36,7 +36,7 @@
         </div>
         
         <input type="submit" value="submit" class="submit">
-        <p class="out">Nothing yet</p>
+        <p class="out3">Nothing yet</p>
     
          <p>Which band sang "Wheel in the Sky" and "Faithfully"?</p>
         <div>
@@ -47,7 +47,7 @@
         </div>
     
         <input type="submit" value="submit" class="submit">
-        <p class="out">Nothing yet</p>
+        <p class="out4">Nothing yet</p>
     
           <p>Which band is Mr.P's favorite?</p>
         <div>
@@ -58,17 +58,65 @@
         </div>
     
         <input type="submit" value="submit" class="submit">
-        <p class="out">Nothing yet</p>
+        <p class="out5">Nothing yet</p>
     
     <script>
     var submit = document.querySelector(".submit");
     var out = document.querySelector(".out");
 
-    function Question1(){
-        var radios = document.getElementsByName("question1");
-        for(var i = 0; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i].value == "1982"){
+    function reply(){
+        var radios1 = document.getElementsByName("question1");
+        for(var i = 0; i < radios1.length; i++){
+            if(radios1[i].checked){
+                if(radios1[i].value == "1982"){
+                    out.innerHTML = "Correct";
+                }
+                else{
+                    out.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+        var radios2 = document.getElementsByName("question2");
+        for(var i = 0; i < radios2.length; i++){
+            if(radios2[i].checked){
+                if(radios2[i].value == "Dave Mustaine"){
+                    out.innerHTML = "Correct";
+                }
+                else{
+                    out.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+        var radios3 = document.getElementsByName("question3");
+        for(var i = 0; i < radios3.length; i++){
+            if(radios3[i].checked){
+                if(radios3[i].value == "Billy Idol"){
+                    out.innerHTML = "Correct";
+                }
+                else{
+                    out.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+        var radios4 = document.getElementsByName("question4");
+        for(var i = 0; i < radios4.length; i++){
+            if(radios4[i].checked){
+                if(radios4[i].value == "Journey"){
+                    out.innerHTML = "Correct";
+                }
+                else{
+                    out.innerHTML = "Wrong";
+                }
+                break;
+            }
+        }
+        var radios5 = document.getElementsByName("question5");
+        for(var i = 0; i < radios5.length; i++){
+            if(radios5[i].checked){
+                if(radios5[i].value == "Alice in Chains"){
                     out.innerHTML = "Correct";
                 }
                 else{
@@ -78,63 +126,7 @@
             }
         }
     }
-        function Question2(){
-        var radios = document.getElementsByName("question2");
-        for(var i = 1; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i].value == "Dave Mustaine"){
-                    out.innerHTML = "Correct";
-                }
-                else{
-                    out.innerHTML = "Wrong";
-                }
-                break;
-            }
-        }
-    }
-      function Question3(){
-        var radios = document.getElementsByName("question3");
-        for(var i = 2; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i].value == "Billy Idol"){
-                    out.innerHTML = "Correct";
-                }
-                else{
-                    out.innerHTML = "Wrong";
-                }
-                break;
-            }
-        }
-    }
-      function Question4(){
-        var radios = document.getElementsByName("question4");
-        for(var i = 3; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i].value == "Journey"){
-                    out.innerHTML = "Correct";
-                }
-                else{
-                    out.innerHTML = "Wrong";
-                }
-                break;
-            }
-        }
-    }
-     function Question5(){
-        var radios = document.getElementsByName("question5");
-        for(var i = 4; i < radios.length; i++){
-            if(radios[i].checked){
-                if(radios[i].value == "Alice in Chains"){
-                    out.innerHTML = "Correct";
-                }
-                else{
-                    out.innerHTML = "Wrong";
-                }
-                break;
-            }
-        }
-    }
-    submit.addEventListener("click", Question1, Question2, Question3, Question4, Question5);
+    submit.addEventListener("click", reply);
     </script>
     </body>
     
