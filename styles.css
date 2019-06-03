@@ -1,5 +1,11 @@
 p {
     font-size: medium;
     font-family: sans-serif;
-    color: blue;
+    color: red;
+}
+
+.q1{
+    font-size: medium;
+    font-family: cursive;
+    color: purple;
 }
