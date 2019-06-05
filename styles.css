@@ -24,3 +24,8 @@ p {
     font-family: cursive;
     color: purple;
 }
+
+div{
+    margin-left: auto;
+    margin-right: auto;
+}
