@@ -1,6 +1,6 @@
 html{
     width: 100%;
-    background-color: grey;
+    background-color: lightblue;
 }
 
 body{
@@ -18,16 +18,17 @@ p {
     font-size: medium;
     padding-top: 1%;
     padding-bottom: 1%;
-    color: red;
+    color: yellow;
 }
 
 .q1{
     font-size: medium;
     font-family: cursive;
-    color: purple;
+    color: green;
 }
 
 div{
+    padding-left: 2%;
     text-align: left;
     margin: 1%;
     border-radius: 2px;
